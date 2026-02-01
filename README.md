@@ -232,7 +232,7 @@ No autonomy without kill switches. Period.
 - Weather-adaptive planning
 - Fully offline mode
 - Open hardware rover design
-[Nithin](docs/roadmap.md)
+- [Nithin](docs/roadmap.md)
 ---
 
 ## Contributing
