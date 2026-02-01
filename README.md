@@ -1,4 +1,4 @@
-# Autonomous Multi-Rover Farming System (Farm OS)
+# Autonomous Multi-Rover Farming System (FarmOS)
 
 A scalable, AI-driven farming platform using multiple autonomous rovers (tractor-like vehicles) coordinated by a centralized fleet intelligence server. The system automates ploughing, sowing, irrigation support, crop monitoring, and harvesting with real-time telemetry and farmer-facing control apps.
 
@@ -45,27 +45,29 @@ The goal is **full-field autonomy with human-in-the-loop supervision**, not blin
 ## System Architecture
 
 ```
-+----------------------+
-|   Farmer App (UI)    |
-|  Web / Mobile        |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Central Fleet Server |
-| - Mission Planner   |
-| - AI Models         |
-| - Data Store        |
-| - Fleet Monitor     |
-+----------+-----------+
-           |
-   Radio / LTE / RF
-           |
-+----------+-----------+    +----------+-----------+
-|  Rover A (Plough)   |    |  Rover B (Sow)      |
-| - Sensors           |    | - Sensors           |
-| - Actuators         |    | - Actuators         |
-+---------------------+    +---------------------+
+               +----------------------+
+               |   Farmer App (UI)    |
+               |  Web / Mobile        |
+               +----------+-----------+
+                          |
+                          v
+               +----------------------+
+               | Central Fleet Server |
+               |  - Mission Planner   |
+               |  - AI Models         |
+               |  - Data Store        |
+               |  - Fleet Monitor     |
+               +----------+-----------+
+                          |
+                  Radio / LTE / RF
+                         / \
+                        /   \
+                       /     \
++----------+-----------+    +----------+----------+
+|   Rover A (Plough)   |    |  Rover B (Sow)      |
+|  - Sensors           |    | - Sensors           |
+|  - Actuators         |    | - Actuators         |
++----------+-----------+    +----------+----------+
 ```
 
 ---
@@ -143,10 +145,10 @@ Centralized intelligence keeps rovers **cheap and dumb**. This is intentional. S
 - Higher emissions
 
 ### Battery Comparison
-| Battery Type | Pros | Cons |
-|-------------|------|------|
-| Lithium-ion | High energy density, mature | Cost, thermal risk |
-| Sodium-ion  | Cheaper, safer, cold tolerant | Lower energy density |
+| Battery Type |              Pros             |          Cons        |
+|--------------|-------------------------------|----------------------|
+| Lithium-ion  | High energy density, mature   | Cost, thermal risk   |
+| Sodium-ion   | Cheaper, safer, cold tolerant | Lower energy density |
 
 Verdict: **Sodium-ion wins for agriculture scale.**
 
@@ -224,11 +226,11 @@ No autonomy without kill switches. Period.
 ---
 
 ## Roadmap
-- [ ] Swarm-level optimization
-- [ ] Autonomous charging stations
-- [ ] Weather-adaptive planning
-- [ ] Fully offline mode
-- [ ] Open hardware rover design
+- Swarm-level optimization
+- Autonomous charging stations
+- Weather-adaptive planning
+- Fully offline mode
+- Open hardware rover design
 
 ---
 
