@@ -225,7 +225,7 @@ No autonomy without kill switches. Period.
 
 ---
 
-## Roadmap (docs/roadmap.md)
+## Roadmap
 
 - Swarm-level optimization
 - Autonomous charging stations
@@ -234,13 +234,10 @@ No autonomy without kill switches. Period.
 - Open hardware rover design
 ---
 
-## Contributing
+## Contributors
 Contributions are welcome.
 
-- Fork the repo
-- Create feature branches
-- Write clean commits
-- Document everything
+- [Nithin](docs/roadmap.md)
 
 ---
 
