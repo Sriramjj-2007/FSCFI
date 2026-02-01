@@ -7,7 +7,7 @@ A scalable, AI-driven farming platform using multiple autonomous rovers (tractor
 ## Table of Contents
 - [Overview](#overview)
 - [Key Features](#key-features)
-- [System Architecture](#system-architecture)
+- [System Architecture](docs/architecture.md)
 - [Rovers](#rovers)
 - [Central Fleet Intelligence](#central-fleet-intelligence)
 - [Communication](#communication)
