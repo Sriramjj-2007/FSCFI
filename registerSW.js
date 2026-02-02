@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/FSCFI/UserDashboard/sw.js', { scope: '/FSCFI/UserDashboard/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/FSCFI/sw.js', { scope: '/FSCFI/' })})}
