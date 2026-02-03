@@ -78,7 +78,7 @@ Each rover is a semi-independent robotic unit capable of executing assigned task
 ### Hardware
 - Chassis: Tractor-like
 - Motors: BLDC
-- Compute: Raspberry Pi 5 / Jetson
+- Compute: Raspberry Pi / Jetson
 - Sensors:
   - GPS (RTK preferred)
   - IMU
