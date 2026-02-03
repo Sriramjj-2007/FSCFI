@@ -31,14 +31,14 @@ The goal is **full-field autonomy with human-in-the-loop supervision**, not blin
 ---
 
 ## Key Features
-- 🚜 Multi-rover coordination for parallel field operations
-- 🧠 Centralized AI-based task planning and optimization
-- 📡 Long-range radio communication (LoRa / RF / LTE optional)
-- ⚡ Electric Rover
-- 🔋 Pluggable battery tech (Li-ion / Sodium-ion)
-- 🌱 Precision farming with sensor-driven decisions
-- 📱 Mobile & web app for farmers
-- 📊 Live telemetry, alerts, and mission replay
+- <!--🚜--> Multi-rover coordination for parallel field operations
+- <!--🧠--> Centralized AI-based task planning and optimization
+- <!--📡--> Long-range radio communication (LoRa / RF / LTE optional)
+- <!--⚡--> Electric Rover
+- <!--🔋--> Pluggable battery tech (Li-ion / Sodium-ion)
+- <!--🌱--> Precision farming with sensor-driven decisions
+- <!--📱--> Mobile & web app for farmers
+- <!--📊--> Live telemetry, alerts, and mission replay
 
 ---
 
