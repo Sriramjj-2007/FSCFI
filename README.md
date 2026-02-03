@@ -34,7 +34,7 @@ The goal is **full-field autonomy with human-in-the-loop supervision**, not blin
 - 🚜 Multi-rover coordination for parallel field operations
 - 🧠 Centralized AI-based task planning and optimization
 - 📡 Long-range radio communication (LoRa / RF / LTE optional)
-- ⚡ Electric and non-electric rover support
+- ⚡ Electric Rover
 - 🔋 Pluggable battery tech (Li-ion / Sodium-ion)
 - 🌱 Precision farming with sensor-driven decisions
 - 📱 Mobile & web app for farmers
@@ -76,14 +76,14 @@ The goal is **full-field autonomy with human-in-the-loop supervision**, not blin
 Each rover is a semi-independent robotic unit capable of executing assigned tasks.
 
 ### Hardware
-- Chassis: Tractor-like or skid-steer
-- Motors: BLDC / Diesel (hybrid supported)
-- Compute: Raspberry Pi 5 / Jetson / MCU + SBC
+- Chassis: Tractor-like
+- Motors: BLDC
+- Compute: Raspberry Pi 5 / Jetson
 - Sensors:
   - GPS (RTK preferred)
   - IMU
-  - Soil moisture & temperature
-  - Cameras (RGB / Multispectral optional)
+  - Soil moisture, Humidity & Temperature
+  - Cameras (RGB / Multispectral)
   - LiDAR / Ultrasonic (obstacle detection)
 
 ### Capabilities
@@ -101,6 +101,7 @@ The brain of the system.
 - Field mapping & geofencing
 - Task decomposition (who does what, when)
 - Path planning & collision avoidance
+- Traffic Maintenance
 - Load balancing across rovers
 - Health monitoring & predictive maintenance
 
@@ -131,7 +132,7 @@ Centralized intelligence keeps rovers **cheap and dumb**. This is intentional. S
 - Quiet, zero emissions
 - Easy control & automation
 
-**Cons:**
+<!-- **Cons:**
 - Charging downtime
 - Battery degradation
 
@@ -142,7 +143,7 @@ Centralized intelligence keeps rovers **cheap and dumb**. This is intentional. S
 
 **Cons:**
 - Maintenance heavy
-- Higher emissions
+- Higher emissions -->
 
 ### Battery Comparison
 | Battery Type |              Pros             |          Cons        |
@@ -169,7 +170,7 @@ Verdict: **Sodium-ion wins for agriculture scale.**
 - Maps: GeoJSON
 
 ### App
-- Frontend: React / Flutter
+- Frontend: React <!--/ Flutter-->
 - Realtime: WebSockets
 
 ---

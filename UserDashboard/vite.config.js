@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  base: "/FSCFI/UserDashboard/",
+  base: "/FSCFI/",
   plugins: [
     react(),
     VitePWA({
@@ -16,7 +16,7 @@ export default defineConfig({
         theme_color: "#eaf4ee",
         background_color: "#ffffff",
         display: "standalone",
-        start_url: "/FSCFI/UserDashboard/",
+        start_url: "/FSCFI/",
         icons: [
           {
             src: "/icon-192.png",
