@@ -151,8 +151,6 @@ Centralized intelligence keeps rovers **cheap and dumb**. This is intentional. S
 | Lithium-ion  | High energy density, mature   | Cost, thermal risk   |
 | Sodium-ion   | Cheaper, safer, cold tolerant | Lower energy density |
 
-Verdict: **Sodium-ion wins for agriculture scale.**
-
 ---
 
 ## Software Stack
