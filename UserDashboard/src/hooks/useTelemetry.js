@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 
-export function useTelemetry() {
+export function useTelemetry(ip) {
   const [data, setData] = useState(null);
   const [connected, setConnected] = useState(false);
 
   useEffect(() => {
     // Replace with your Pi IP (LAN IP if local)
-    const ws = new WebSocket('ws://192.168.120.26:8080');
+    const ws = new WebSocket(ip);
 
     ws.onopen = () => setConnected(true);
     ws.onclose = () => setConnected(false);

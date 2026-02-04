@@ -10,8 +10,12 @@ import StatusBar from "../components/StatusBar";
 import MetricCard from "../components/MetricCard";
 import { WeatherCard } from "../components/WeatherCard";
 import { RobotAdvisory } from "../components/RobotAdvisory";
+import { useTelemetry } from "../hooks/useTelemetry";
 
 export default function Dashboard() {
+  const ip = 'wss://nemogroot-pi.tail0c0ba3.ts.net';
+  const { data, connected } = useTelemetry(ip);
+
   return (
     <>
       <Header />
@@ -23,10 +27,10 @@ export default function Dashboard() {
         <StatusBar />
 
         <div style={grid}>
-          <MetricCard icon={<Thermometer />} title="Temperature" unit="°C" />
-          <MetricCard icon={<Droplet />} title="Soil Moisture" unit="%" />
-          <MetricCard icon={<Leaf />} title="Grass Growth" unit="%" />
-          <MetricCard icon={<Wind />} title="Wind Speed" unit="km/h" />
+          <MetricCard icon={<Thermometer />} title="Temperature" unit="°C" value={data?.temperature || "-"} connected={connected} />
+          <MetricCard icon={<Droplet />} title="Soil Moisture" unit="%" value={data?.moisture || "-"} connected={connected} />
+          <MetricCard icon={<Leaf />} title="Grass Growth" unit="%" value={data?.grassGrowth || "-"} connected={connected} />
+          <MetricCard icon={<Wind />} title="Wind Speed" unit="km/h" value={data?.windSpeed || "-"} connected={connected} />
         </div>
 
         <div style={sideGrid}>

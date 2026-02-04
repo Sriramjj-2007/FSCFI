@@ -1,17 +1,17 @@
-export default function MetricCard({ icon, title, unit }) {
+export default function MetricCard({ icon, title, unit, value , connected}) {
   return (
     <div className="card">
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <div style={iconBox}>{icon}</div>
         <div className="badge">
-          <span className="offline-dot" />
-          Offline
+          <span className={connected ? "online-dot" : "offline-dot"} />
+          {connected ? "Connected" : "Disconnected"}
         </div>
       </div>
 
       <h4>{title}</h4>
-      <h2>— {unit}</h2>
-      <div className="muted">No data</div>
+      <h2>{value[0]} {unit}</h2>
+      <div className="muted">{value[1] ? new Date(value[1]).toLocaleTimeString() : ""}</div>
     </div>
   );
 }
